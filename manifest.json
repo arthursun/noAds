@@ -1,0 +1,14 @@
+{
+    "name": "Zhihu Ads Block",
+    "description": "As the name shows",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "menu.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.zhihu.com/*"],
+        "css": ["zhihuAdsBlock.css"]
+      }]
+}
